@@ -8,7 +8,6 @@ import { BookCreateComponent } from './product/book-create/book-create.component
 import { BookEditComponent } from './product/book-edit/book-edit.component';
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
-import { ProductDetalComponent } from './product/product-detal/product-detal.component';
 import { BookDetailComponent } from './product/book-detail/book-detail.component';
 
 @NgModule({
@@ -17,7 +16,6 @@ import { BookDetailComponent } from './product/book-detail/book-detail.component
     BookListComponent,
     BookCreateComponent,
     BookEditComponent,
-    ProductDetalComponent,
     BookDetailComponent
   ],
   imports: [
