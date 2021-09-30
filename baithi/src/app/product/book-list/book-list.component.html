@@ -1,0 +1,31 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th>Mã Sách</th>
+    <th>Title</th>
+    <th>Tac Gia</th>
+    <th>Delete</th>
+    <th>Edit</th>
+    <th>Detail</th>
+
+  </tr>
+  </thead>
+  <tr *ngFor="let b of books">
+    <td>{{b.id}}</td>
+    <td>{{b.title}}</td>
+    <td>{{b.author}}</td>
+    <td>
+      <button (click)="deleteBook(b.id)" type="button" class="btn btn-secondary">Delete</button>
+    </td>
+    <td>
+      <button type="button" class="btn btn-secondary" [routerLink]="['/book/edit/',b.id]">
+        Edit
+      </button>
+    </td>
+    <td>
+      <button type="button" class="btn btn-secondary" [routerLink]="['/book/detail/',b.id]">
+        Detail
+      </button>
+    </td>
+  </tr>
+</table>
